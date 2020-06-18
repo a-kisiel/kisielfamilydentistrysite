@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The home page for Dr. Raymond Jeff Kisiel's dental practice in Queensbury, NY">
+	<meta name="google-site-verification" content="hgLNhLkGQWfi0Cjbr5xl58cFsA54r-6dAw5o76dRrOk" />
+	<link rel="stylesheet" href="../CSS/kfd.css">
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<title>Kisiel Family Dentistry</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<header class="masthead">
+		<a id="KFD" title="Home" style="font-size: 1.5em">Kisiel Family Dentistry</a>
+	</header>
+	<div id="navbar" class="flexbar">
+		<button class="tabl" onclick="openNav()" id="mobile-menu"><strong><i class="fa fa-bars"></i></strong></button>
+		<button class="tabl" onclick="openPage('home', this, 'home-h1');"><strong>Home</strong> &nbsp &nbsp <i class="fas fa-home"></i></button>
+		<button class="tabl" onclick="openPage('about-us', this, 'staff-h1');"><strong>Our Staff</strong> &nbsp &nbsp <i class="fas fa-user-md"></i></button>
+		<button class="tabl" onclick="openPage('FAQ', this, 'faq-h1')"><strong>FAQ</strong> &nbsp &nbsp <i class="far fa-question-circle"></i></button>
+		<button class="tabl" onclick="openPage('ofs', this, 'of-h1')"><strong>Online Forms</strong> &nbsp &nbsp <i class="fas fa-file-alt"></i></button>
+		<button class="tabl" onclick="openPage('latest-updates', this, 'latest-updates-h1')"><strong>Latest Updates</strong> &nbsp &nbsp <i class="fas fa-newspaper"></i></button>
+		<button class="tabl" onclick="openPage('contact-us', this, 'contact-h1')"><strong>Contact Us</strong>&nbsp &nbsp <i class="fas fa-tooth"></i></button>
+	</div>
+
+	<div id="slideshow-bob">
+		<li class="slide visible-slide"></li>
+		<li class="slide"></li>
+		<li class="slide"></li>
+		<li class="slide"></li>
+		<li class="slide"></li>
+		<li class="slide"></li>
+		<div style="display: flex;">
+			<p id="scrollDown" class="invisible-sd">
+				scroll down for more
+			</p>
+		</div>
+	</div>
+
+	<div id="bordered">
+		<div id="home" class="tabcontent">
+			<h1 id="home-h1">Kisiel Family Dentistry</h1>
+
+			<h2 class="covid">Note Regarding the Recent COVID-19 Epidemic:</h2>
+			<p class="covid">
+				We've been working to conform to the CDC's recommended guidelines, and as such have been open in a limited capacity for 
+				dental emergencies. We will be opening for routine dental work on <strong>June 23</strong>. People who have already called with 
+				issues will be given first priority. We'll be calling all hygiene patients due that week/subsequent weeks to confirm/reschedule their 
+				appointments. 
+				Continue checking this site for the most current updates for our practice.
+			</p>
+
+			<p> 
+				Dr. Kisiel and his staff are adept at performing all standard dental procedures, including crowns, bridges, partial and full dentures, implants, 
+				implant-retained crowns and dentures, root canals, extractions, tooth-colored restorations, and more. We won't try to make you pay for anything you don't 
+				need, nor will we perform anything we aren't comfortable with -- if we don't think we can do something we have no problems referring you to a 
+				trusted nearby specialist who can.
+			</p>
+
+			<h2>Hours</h2>
+			<p style="text-align: center">
+				Tuesday: 8:15am - 6:00pm<br/>
+				Wednesday 8:15am - 3:00pm<br/>
+				Thursday 8:15am - 5:00pm<br/>
+				Friday 8:15am - 2:00pm<br/><br/>
+				Special arrangements may be made for early-morning or late afternoon in emergency cases.
+			</p>
+			<h2>
+				Location
+			</h2>
+			<!-- Google Maps Implementation -->
+			<div id="map">
+				<script>
+					function initMap() {
+						var office = {lat: 43.346385, lng: -73.657034};
+						var map = new google.maps.Map(document.getElementById('map'), {zoom: 16, center: office});
+						var marker = new google.maps.Marker({
+							position: office, 
+							map: map, 
+							title: "Kisiel Family Dentistry", 
+							animation: google.maps.Animation.DROP
+						});
+					}
+				</script>
+				<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMMgOiyiRgd57yxioEnHRdfVXJ5PDsylA&callback=initMap">
+				</script>
+					
+			</div>
+		</div>
+
+		<div id="ofs" class="tabcontent">
+			<h1 id="of-h1">Online Forms</h1>
+			<p> 
+				In an effort to save everyone time at the office, we've made some forms available online. Simply print what you need and fill it out
+				whenever.
+			</p>
+			<p> 
+				If at any point in the process you find that you're
+				having some difficulty, feel free to give us a call, stop
+				in at the office, or send us an email at kisieldent@gmail.com.
+			</p>
+
+				<button class="accordion" onclick="activateAcc('acc1')">Form Information</button>
+					<div class="accpanel" id="acc1">
+						<p>
+							Currently, this site only provides the PDF versions of forms, and as a result will never ask for any personal 
+							 information; be careful handing such information out online.<br/><br/>New patients should download, print, 
+							 and fill out the <strong>New Patient Questionnaire</strong>, then bring it in to the office so we can enter 
+							 their information in our books.
+						</p>
+					</div>
+
+				<button class="accordion" onclick="activateAcc('acc2')">Troubleshooting/FAQ</button>
+					<div class="accpanel" id="acc2">
+						<p> The download process for these forms may vary slightly depending on your internet browser, but the differences are minor (and the 
+							process itself is fairly easy).<br/><br/> Upon clicking the respective form link below, a new tab containing the form PDF should open.
+							 Look for the printer icon in the PDF reader window and it should lead you through the process of printing. If you'd prefer to save 
+							 the document, look for the 'download' button instead.
+						</p>
+						<p style="font-weight: bold;">I don't see the form I need below -- what should I do?</p>
+						<p>
+							If you require a specific form that isn't listed below, either send us an email at kisieldent@gmail.com or stop by the 
+							office and we'll give you a paper copy.
+						</p>
+						<p style="font-weight: bold;">There was a problem with my download/I'm having some other technical difficulties.</p>
+						<p>
+							First, check where your browser displays your downloaded content (for Google Chrome a box pops up in the bottom left corner, 
+							for Firefox the download shows up in the top right). If it's not there try downloading again (sometimes the button didn't register 
+							the first click). If that doesn't work, send us an email and we can send you a direct PDF for the form.<br/><br/>
+							If all else fails, you can always come to the office in person and pick up a paper copy.
+						</p>
+					</div>
+				
+				<button class="accordion" onclick="activateAcc('acc3')">Available Forms</button>
+					<div class="accpanel" id="acc3">
+						<p><a href="../Forms/Health History.pdf" target="_blank" title="health_history" class="formLink" download> Health History </a></p>
+						<p><a href="../Forms/HIPAA.pdf" target="_blank" title="hipaa" class="formLink" download> HIPAA </a></p>
+						<p><a href="../Forms/Patient Screening.pdf" target="_blank" title="patient_screening" class="formLink" download> Patient Screening </a></p>
+					</div>		
+		</div>
+
+		<div id="latest-updates" class="tabcontent">
+			<h1 id="latest-updates-h1">Latest Updates</h1>
+
+			<h2 class="update-date">6/10/2020</h2>
+			<p>
+				Dear Patients,<br/><br/>
+				Our community has been through a lot over the last few months, and all of us are looking forward to resuming 
+				our normal habits and routines.  While many things have changed, one thing has remained the same: our commitment 
+				to your safety.<br/><br/>Infection control has always been a top priority for our practice, and you'll soon see some 
+				 changes meant to enhance our already stringent measures in that area. We'd like to tell you about some of the 
+				procedures we follow in our practice to keep patients and staff safe.<br/><br/>
+				Our office follows infection control recommendations made by the American Dental Association (ADA), the U.S. Centers 
+				for Disease Control and Prevention (CDC) and OSHA.  We follow the activities of these agencies so that we are up-to-date 
+				on any new rulings or guidance that may be issued.  We do this to make sure that our infection control procedures are 
+				current and adhere to each agency’s recommendations.<br/><br/>
+				In the interest of protecting our patients and staff, we ask that you note the following changes in procedure:
+			</p>
+			<ul>
+				<li><p>
+					Our office will communicate with you before your appointment to ask some screening questions. Upon arriving at the 
+					office, you'll be asked these questions again and your temperature will be taken.
+				</p></li>
+				<li><p>
+					We will have hand sanitizer as you enter the building and throughout the reception area. Hand washing can be done in the 
+					bathroom and treatment rooms as well.
+				</p></li>
+				<li><p>
+					We will not have magazines, children’s toys and other such materials available in the waiting area 
+					since these items are difficult to disinfect.
+				</p></li>
+			</ul>
+
+            <p>
+				Appointments will be managed to allow for social distancing between patients.  That might mean that you’re offered 
+				fewer options for scheduling your appointment.  We will do our best to space out our scheduled appointments to reduce 
+				both the number of patients in the waiting room and each patient's waiting time.<br/><br/>
+				We are happy to answer any questions you may have about the steps we have taken to keep you, and every patient, 
+				safe and comfortable in our practice.<br/><br/>
+				Sincerely,<br/><br/>
+				R.Jeffrey Kisiel and Staff
+			</p>
+		</div>
+
+		<div id="FAQ" class="tabcontent">
+			<h1 id="faq-h1">Frequently Asked Questions</h1>
+
+			<p style="font-weight: bold;">What is your billing policy?</p>
+			<p>
+				We don't participate with any particular insurance plans, but rather have one fee for all patients. However, if you have insurance we will 
+				gladly process their claim for any dental work. Generally, we prefer cash, check, Mastercard, or Visa as methods of payment at time of service. 
+				We also offer payment plans to our regular, trusted patients.
+			</p>
+			<p style="font-weight: bold;">What's the difference between a cap and a crown?</p>
+			<p>Nothing -- they mean the same thing.<br/><br/> A crown is recommended when more than half of the tooth structure is either gone or filled. Other reasons for getting a crown include 
+				having a root canal or symptoms of Cracked Tooth Syndrome (i.e. cold sensitivity and sharp pain upon biting down).
+			</p>
+			<p style="font-weight: bold;">Is bleaching safe?</p>
+			<p>Yes ... if done as recommended.<br/><br/> Bleaching can burn tissue if not applied <em>exclusively</em> to the enamel.
+			</p>
+			<p style="font-weight: bold;">Why do I need x-rays?</p>
+			<p>Sometimes we can't detect problems within the teeth/bones themselves just by looking at their outsides -- x-rays provide us with that extra internal perspective.
+				Children and the elderly actually develop decay and problems more readily due to changes in diet, hormones, and saliva chemistry. X-rays also allow us 
+				to assess the soundness of existing restorations.
+			</p>
+			<p style="font-weight: bold;">Will the shots hurt?</p>
+			<p>
+				We're told consistently that we give a 'gentle' shot; we also use a topical anesthesia before the injection to minimize the pain.
+			</p>
+		</div>
+
+		<div id="about-us" class="tabcontent">
+			<h1 id="staff-h1">Our Staff</h1>
+			<div id="bio-container">
+				<img src="../Pictures/jeff.jpg" class="bio-image">
+				<h2 class="bios">Dr. Kisiel</h2>
+				<p class="bios" style="margin-bottom: 5em;"> 
+					Dr. Raymond "Jeff" Kisiel grew up in Clinton, NY, a small town near Utica. He graduated from Clinton High School in 1982,
+					Hamilton College in 1986, and SUNY of Buffalo Dental School in 1990. He then extended his education with a dental residency 
+					at Buffalo General Hospital in 1991.<br/><br/>
+					In March 1991, Dr. Kisiel became an associate with Dr. Harvey Dearstyne, eventually buying his practice in January 1993. 
+					He practiced on Pearl Street in Glens Falls until March 2003, when he moved to his current office in Queensbury.
+				</p>
+
+				<!-- <img src="../Pictures/moi.jpg" class="bio-image">
+				<h2 class="bios">Tracy Arquette</h2>
+				<p class="bios">
+					Tracy has been our trusted 'do-everything' assistant for 24 years. She is well-loved by staff and patients alike (and a large 
+					part of why people keep coming back to our office!).
+				</p> -->
+			</div>
+		</div>
+
+		<div id="contact-us" class="tabcontent">
+			<h1 id="contact-h1">Contact Us</h1>
+
+			<p>
+				If you have any questions or problems we'd love to hear from you. The easiest/best way to do so is to call us at (518) 792-2364, but we also 
+				periodically check our email kisieldent@gmail.com.
+			</p>
+
+			<p class="contact-links">
+				Kisiel Family Dentistry<br/>
+				14 Baywood Dr.<br/>
+				Queensbury, NY<br/>
+				12804<br/><br/>
+
+				Fax: (518) 745-8284<br/>
+				Phone: (518) 792-2364<br/>
+				Email: kisieldent@gmail.com
+			</p>
+		</div>
+
+		<footer id="contact" class="cleared">
+			____________________________________________________ <br><br>
+			14 Baywood Dr&nbsp | &nbspQueensbury, NY 12804&nbsp |&nbsp (518) 792-2364
+		</footer>
+	</div>
+</body>
+
+<script src="../Scripts/kfd.js"></script>
+
+</html>

@@ -1,0 +1,389 @@
+html {
+    margin: 0;
+    padding: 0;
+    color: #224;
+}
+
+body {
+    border-bottom: 5px solid #224;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.masthead {
+    font-size: 2em;
+    font-family: Georgia, serif;
+    padding: 1em;
+    background-color: #224;
+    color: white;
+    text-align: left;
+}
+
+#contact {
+    padding-top: 1.2em;
+    margin-bottom: 2em;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+    font-size: large;
+}
+
+h1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 3em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 1.6em;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.cleared {
+    clear: both;
+}
+
+/* COVID announcement */
+
+.covid {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Bells and whistles */
+
+#map {
+    height: 400px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    z-index: 2;
+}
+
+/* Tab qualities irrespective of screen size */
+
+.tabl {
+    background-color: #224;
+    color: white;
+    font-size: 1.1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: none;
+}
+
+#slideshow-bob {
+    padding: none;
+    margin: 0;
+}
+
+/* In-tab elements */
+
+.formLink {
+    color: blue;
+}
+
+ul {
+    margin-left: 15%;
+}
+
+li>p {
+    margin-left: 4%;
+    margin-right: 19%;
+    padding-left: 0;
+}
+
+/* OFS Accordion */
+
+.accordion {
+    background-color: lightgray;
+    color: black;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    width: 70%;
+    padding: 1em;
+}
+
+a.accpanel {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.accordion:hover {
+    background-color: #e3e3e3;
+    transition: .2s;
+}
+
+
+/* Larger Screens */
+
+@media only screen and (min-width: 701px) {
+
+    /* Adds 'sticky' navbar */
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .sticky + .content {
+        padding-top: 60px;
+    }
+
+    #navbar {
+        padding: none;
+        margin: none;
+        z-index: 4;
+    }
+
+    /* Main navbar */
+
+    .flexbar {
+        display: flex;
+    }
+
+    #mobile-menu {
+        display: none;
+    }
+
+    .tabl {
+        flex: 1;
+        transition: .1s;
+    }
+
+    .tabl:hover {
+        background-color: silver;
+        color: #224;
+    }
+
+    /* In-tab elements */
+
+    .bios {
+        margin-left: 30%; 
+        text-align: left
+    }
+    
+    .bio-image {
+        margin-left: 10%; 
+        padding-right: 5%;
+        float:left; 
+        height: 200px; 
+        width: 200px;
+    }
+
+    .update-date {
+        padding-left: 10%;
+        text-decoration: underline;
+        text-align: left;
+    }
+
+
+    #bordered {
+        border-left: 200px solid #224;
+        border-right: 200px solid #224;
+    }
+
+    /* Slideshow for larger screens */
+
+    #slideshow-bob {
+        width: 100%;
+        height: 820px;
+        margin-top: 0;
+        margin-left: 0;
+        padding-bottom: 0;
+        position: relative;
+        background-repeat: no-repeat;
+        z-index: -1;
+        list-style-type: none;
+    }
+
+    .slide {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+    }
+
+    .visible-slide {
+        opacity: 1;
+    }
+
+    .slide:nth-of-type(1) {
+        background-image: url("../Pictures/banner2.jpg");
+    }
+    .slide:nth-of-type(2) {
+        background-image: url("../Pictures/IMG_2358.jpg");
+    }
+    .slide:nth-of-type(3) {
+        background-image: url("../Pictures/IMG_2359.jpg");
+    }
+    .slide:nth-of-type(4) {
+        background-image: url("../Pictures/IMG_2380.jpg");
+    }
+    .slide:nth-of-type(5) {
+        background-image: url("../Pictures/IMG_2363.jpg");
+    }
+    .slide:nth-of-type(6) {
+        background-image: url("../Pictures/IMG_2357.jpg");
+    }
+
+    #scrollDown {
+        margin: 0 auto;
+        position: fixed;
+        left: 50%;
+        bottom: 20px;
+        transform: translate(-50%, -50%);
+        font-size: 1.6em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border: 5px solid #224;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        background-color: #224;
+        color: white;
+        z-index: 1;
+    }
+
+    .invisible-sd {
+        opacity: 0;
+
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+    }
+
+    .visible-sd {
+        opacity: 1;
+    }
+}
+
+/* Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+
+    p {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: .9em;
+        color: #224;
+    }
+
+    #home h1 {
+        display: none;
+    }
+
+    a.contact-links {
+        color: #224;
+    }
+
+    .masthead {
+        text-align: center;
+        padding-bottom: .5em;
+    }
+
+    #slideshow-bob {
+        width: 100%;
+        height: 200px;
+        margin: 0;
+        padding-top: 20px;
+        position: relative;
+        background-image: url("../Pictures/banner2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        list-style-type: none;
+        z-index: -1;
+    }
+
+    h2.covid {
+        margin-top: 0;
+        padding-top: 10px;
+    }
+
+    #scrollDown {
+        opacity: 0;
+    }
+
+    #bordered {
+        border-left: 20px solid #224;
+        border-right: 20px solid #224;
+    }
+
+    /* Navbar */
+
+    .flexbar {
+        overflow: hidden;
+        position: relative;
+        z-index: 4;
+    }
+
+    #mobile-menu {
+        background-color: #224;
+        color: silver;
+        display: block;
+    }
+    
+    .tabl {
+        width: 100%;
+        border: none;
+        display: none;
+    }
+
+    .tabl:hover {
+        color: #224;
+        background-color: silver;
+    }
+
+    #KFD {
+        font-size: 7vw;
+    }
+
+    /* Tab-specific elements */
+
+    .bio-image {
+        width: 75%;
+    }
+
+    .accordion {
+        width: 100%;
+        text-align: left;
+        padding: 2em;
+    }
+
+    .accpanel {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #map {
+        width: 100%;
+    }
+}
