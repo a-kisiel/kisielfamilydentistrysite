@@ -6,11 +6,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="The home page for Dr. Raymond Jeff Kisiel's dental practice in Queensbury, NY">
 	<meta name="google-site-verification" content="hgLNhLkGQWfi0Cjbr5xl58cFsA54r-6dAw5o76dRrOk" />
-	<link rel="stylesheet" href="../CSS/kfd.css">
+
+	<!-- Universal stylesheets -->
 	<link rel="stylesheet" href="../CSS/reset.css">
-	<title>Kisiel Family Dentistry</title>
+	<link rel="stylesheet" href="../CSS/kfd.css">
+	<!-- Different stylesheets for different screen sizes -->
+	<link rel="stylesheet" media="all and (max-device-width: 700px)" href="../CSS/iphone.css"/>
+	<link rel="stylesheet" media="all and ((min-device-width: 701px) and (max-device-width: 1024px))" href="../CSS/landscapes.css">
+    <link rel="stylesheet" media="all and (((device-width: 768px) and (device-height: 1024px)) or ((device-width: 1024px) and (device-height: 768px)))" href="../CSS/ipad.css"/>
+    <link rel="stylesheet" media="all and (min-device-width: 1025px)" href="../CSS/desktop.css" />
+	<!-- Fonts/Icons -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Kisiel Family Dentistry</title>
 </head>
 
 <body>
@@ -45,13 +54,13 @@
 		<div id="home" class="tabcontent">
 			<h1 id="home-h1">Kisiel Family Dentistry</h1>
 
-			<h2 class="covid">Note Regarding the Recent COVID-19 Epidemic:</h2>
+			<h2 class="covid" style="font-weight: bold;">Note Regarding the Recent COVID-19 Epidemic:</h2>
 			<p class="covid">
 				We've been working to conform to the CDC's recommended guidelines, and as such have been open in a limited capacity for 
 				dental emergencies. We will be opening for routine dental work on <strong>June 23</strong>. People who have already called with 
 				issues will be given first priority. We'll be calling all hygiene patients due that week/subsequent weeks to confirm/reschedule their 
 				appointments. 
-				Continue checking this site for the most current updates for our practice.
+				Continue checking this site for the most current updates for our practice.<br/><br/>
 			</p>
 
 			<p> 
@@ -87,7 +96,7 @@
 					}
 				</script>
 				<script async defer
-					src="https://maps.googleapis.com/maps/api/js?key=APIKEY&callback=initMap">
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMMgOiyiRgd57yxioEnHRdfVXJ5PDsylA&callback=initMap">
 				</script>
 					
 			</div>
@@ -99,7 +108,7 @@
 				In an effort to save everyone time at the office, we've made some forms available online. Simply print what you need and fill it out
 				whenever.
 			</p>
-			<p> 
+			<p style="padding-bottom: 2em;"> 
 				If at any point in the process you find that you're
 				having some difficulty, feel free to give us a call, stop
 				in at the office, or send us an email at kisieldent@gmail.com.
@@ -107,40 +116,40 @@
 
 				<button class="accordion" onclick="activateAcc('acc1')">Form Information</button>
 					<div class="accpanel" id="acc1">
-						<p>
+						<p style="padding-top:1em;">
 							Currently, this site only provides the PDF versions of forms, and as a result will never ask for any personal 
 							 information; be careful handing such information out online.<br/><br/>New patients should download, print, 
 							 and fill out the <strong>New Patient Questionnaire</strong>, then bring it in to the office so we can enter 
-							 their information in our books.
+							 their information in our books.<br/><br/>
 						</p>
 					</div>
 
 				<button class="accordion" onclick="activateAcc('acc2')">Troubleshooting/FAQ</button>
 					<div class="accpanel" id="acc2">
-						<p> The download process for these forms may vary slightly depending on your internet browser, but the differences are minor (and the 
+						<p style="padding-top: 1em;">The download process for these forms may vary slightly depending on your internet browser, but the differences are minor (and the 
 							process itself is fairly easy).<br/><br/> Upon clicking the respective form link below, a new tab containing the form PDF should open.
 							 Look for the printer icon in the PDF reader window and it should lead you through the process of printing. If you'd prefer to save 
-							 the document, look for the 'download' button instead.
+							 the document, look for the 'download' button instead.<br/><br/>
 						</p>
-						<p style="font-weight: bold;">I don't see the form I need below -- what should I do?</p>
+						<p style="font-weight: bold;">I don't see the form I need below -- what should I do?<br/><br/></p>
 						<p>
 							If you require a specific form that isn't listed below, either send us an email at kisieldent@gmail.com or stop by the 
-							office and we'll give you a paper copy.
+							office and we'll give you a paper copy.<br/><br/>
 						</p>
-						<p style="font-weight: bold;">There was a problem with my download/I'm having some other technical difficulties.</p>
+						<p style="font-weight: bold;">There was a problem with my download/I'm having some other technical difficulties.<br/><br/></p>
 						<p>
 							First, check where your browser displays your downloaded content (for Google Chrome a box pops up in the bottom left corner, 
 							for Firefox the download shows up in the top right). If it's not there try downloading again (sometimes the button didn't register 
 							the first click). If that doesn't work, send us an email and we can send you a direct PDF for the form.<br/><br/>
-							If all else fails, you can always come to the office in person and pick up a paper copy.
+							If all else fails, you can always come to the office in person and pick up a paper copy.<br/><br/>
 						</p>
 					</div>
 				
 				<button class="accordion" onclick="activateAcc('acc3')">Available Forms</button>
 					<div class="accpanel" id="acc3">
-						<p><a href="../Forms/Health History.pdf" target="_blank" title="health_history" class="formLink" download> Health History </a></p>
+						<p style="padding-top: 1em;"><a href="../Forms/Health History.pdf" target="_blank" title="health_history" class="formLink" download> Health History </a></p>
 						<p><a href="../Forms/HIPAA.pdf" target="_blank" title="hipaa" class="formLink" download> HIPAA </a></p>
-						<p><a href="../Forms/Patient Screening.pdf" target="_blank" title="patient_screening" class="formLink" download> Patient Screening </a></p>
+						<p style="padding-bottom: 1em;"><a href="../Forms/Patient Screening.pdf" target="_blank" title="patient_screening" class="formLink" download> Patient Screening </a></p>
 					</div>		
 		</div>
 
@@ -159,7 +168,7 @@
 				for Disease Control and Prevention (CDC) and OSHA.  We follow the activities of these agencies so that we are up-to-date 
 				on any new rulings or guidance that may be issued.  We do this to make sure that our infection control procedures are 
 				current and adhere to each agency’s recommendations.<br/><br/>
-				In the interest of protecting our patients and staff, we ask that you note the following changes in procedure:
+				In the interest of protecting our patients and staff, we ask that you note the following changes in procedure:<br/><br/>
 			</p>
 			<ul>
 				<li><p>
@@ -177,7 +186,7 @@
 			</ul>
 
             <p>
-				Appointments will be managed to allow for social distancing between patients.  That might mean that you’re offered 
+				<br/>Appointments will be managed to allow for social distancing between patients.  That might mean that you’re offered 
 				fewer options for scheduling your appointment.  We will do our best to space out our scheduled appointments to reduce 
 				both the number of patients in the waiting room and each patient's waiting time.<br/><br/>
 				We are happy to answer any questions you may have about the steps we have taken to keep you, and every patient, 
@@ -190,25 +199,25 @@
 		<div id="FAQ" class="tabcontent">
 			<h1 id="faq-h1">Frequently Asked Questions</h1>
 
-			<p style="font-weight: bold;">What is your billing policy?</p>
+			<p class="question">What is your billing policy?</p>
 			<p>
 				We don't participate with any particular insurance plans, but rather have one fee for all patients. However, if you have insurance we will 
 				gladly process their claim for any dental work. Generally, we prefer cash, check, Mastercard, or Visa as methods of payment at time of service. 
 				We also offer payment plans to our regular, trusted patients.
 			</p>
-			<p style="font-weight: bold;">What's the difference between a cap and a crown?</p>
+			<p class="question">What's the difference between a cap and a crown?</p>
 			<p>Nothing -- they mean the same thing.<br/><br/> A crown is recommended when more than half of the tooth structure is either gone or filled. Other reasons for getting a crown include 
 				having a root canal or symptoms of Cracked Tooth Syndrome (i.e. cold sensitivity and sharp pain upon biting down).
 			</p>
-			<p style="font-weight: bold;">Is bleaching safe?</p>
+			<p class="question">Is bleaching safe?</p>
 			<p>Yes ... if done as recommended.<br/><br/> Bleaching can burn tissue if not applied <em>exclusively</em> to the enamel.
 			</p>
-			<p style="font-weight: bold;">Why do I need x-rays?</p>
+			<p class="question">Why do I need x-rays?</p>
 			<p>Sometimes we can't detect problems within the teeth/bones themselves just by looking at their outsides -- x-rays provide us with that extra internal perspective.
 				Children and the elderly actually develop decay and problems more readily due to changes in diet, hormones, and saliva chemistry. X-rays also allow us 
 				to assess the soundness of existing restorations.
 			</p>
-			<p style="font-weight: bold;">Will the shots hurt?</p>
+			<p class="question">Will the shots hurt?</p>
 			<p>
 				We're told consistently that we give a 'gentle' shot; we also use a topical anesthesia before the injection to minimize the pain.
 			</p>
@@ -241,7 +250,7 @@
 
 			<p>
 				If you have any questions or problems we'd love to hear from you. The easiest/best way to do so is to call us at (518) 792-2364, but we also 
-				periodically check our email kisieldent@gmail.com.
+				periodically check our email kisieldent@gmail.com.<br/><br/>
 			</p>
 
 			<p class="contact-links">
