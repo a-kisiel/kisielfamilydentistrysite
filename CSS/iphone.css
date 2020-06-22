@@ -1,0 +1,97 @@
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: .9em;
+    color: #224;
+}
+
+#home h1 {
+    display: none;
+}
+
+a.contact-links {
+    color: #224;
+}
+
+.masthead {
+    text-align: center;
+    padding-bottom: .5em;
+}
+
+#slideshow-bob {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding-top: 20px;
+    position: relative;
+    background-image: url("../Pictures/banner2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    list-style-type: none;
+    z-index: -1;
+}
+
+h2.covid {
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+#scrollDown {
+    opacity: 0;
+}
+
+#bordered {
+    border-left: 20px solid #224;
+    border-right: 20px solid #224;
+}
+
+/* Navbar */
+
+.flexbar {
+    overflow: hidden;
+    position: relative;
+    z-index: 4;
+}
+
+#mobile-menu {
+    background-color: #224;
+    color: white;
+    display: block;
+}
+
+.tabl {
+    width: 100%;
+    border: none;
+    display: none;
+}
+
+.tabl:hover {
+    color: #224;
+    background-color: silver;
+}
+
+#KFD {
+    font-size: 7vw;
+}
+
+/* Tab-specific elements */
+
+.bio-image {
+    width: 75%;
+}
+
+.accordion {
+    width: 100%;
+    text-align: left;
+    padding: 2em;
+}
+
+.accpanel {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#map {
+    width: 100%;
+}

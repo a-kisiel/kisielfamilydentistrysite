@@ -38,11 +38,13 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 1.9em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Helvetica, sans-serif;
     text-align: justify;
     font-size: 1.6em;
     margin-left: 15%;
@@ -57,7 +59,7 @@ p {
 
 .covid {
     color: red;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 /* Bells and whistles */
@@ -94,13 +96,21 @@ p {
 }
 
 ul {
-    margin-left: 15%;
+    margin-left: 20%;
+    list-style-type: disc;
 }
 
 li>p {
     margin-left: 4%;
     margin-right: 19%;
     padding-left: 0;
+    padding-bottom: .6em;
+}
+
+.question {
+    font-weight: 900;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 /* OFS Accordion */
@@ -116,10 +126,16 @@ li>p {
     padding: 1em;
 }
 
+.accpanel {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
 a.accpanel {
     text-align: left;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .accordion:hover {
@@ -161,6 +177,8 @@ a.accpanel {
     .tabl {
         flex: 1;
         transition: .1s;
+        font-family: 'Open Sans', Helvetica, sans-serif;
+        font-weight: bolder;
     }
 
     .tabl:hover {
@@ -258,7 +276,7 @@ a.accpanel {
         bottom: 20px;
         transform: translate(-50%, -50%);
         font-size: 1.6em;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: Georgia, Times, serif;
         border: 5px solid #224;
         border-radius: 20px;
         padding-top: 10px;
@@ -347,7 +365,7 @@ a.accpanel {
 
     #mobile-menu {
         background-color: #224;
-        color: silver;
+        color: white;
         display: block;
     }
     
@@ -385,5 +403,9 @@ a.accpanel {
 
     #map {
         width: 100%;
+    }
+
+    #contact {
+        opacity: 0;
     }
 }
