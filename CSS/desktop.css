@@ -20,10 +20,6 @@
     display: flex;
 }
 
-#mobile-menu {
-    display: none;
-}
-
 .tabl {
     flex: 1;
     transition: .1s;
@@ -150,4 +146,154 @@
 
 .visible-sd {
     opacity: 1;
+}
+
+@media only screen and (max-width: 700px) {
+
+    p {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: .9em;
+        color: #224;
+    }
+
+    #home h1 {
+        display: none;
+    }
+
+    a.contact-links {
+        color: #224;
+    }
+
+    .masthead {
+        text-align: center;
+        padding-bottom: .5em;
+    }
+
+    #slideshow-bob {
+        height: 200px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        list-style-type: none;
+        display: block;
+    }
+
+    .slide {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        display: block;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+    }
+
+    .visible-slide {
+        opacity: 1;
+    }
+
+    .slide:nth-of-type(1) {
+        background-image: url("../Pictures/banner2.jpg");
+    }
+    .slide:nth-of-type(2) {
+        background-image: url("../Pictures/IMG_2358.jpg");
+    }
+    .slide:nth-of-type(3) {
+        background-image: url("../Pictures/IMG_2359.jpg");
+    }
+    .slide:nth-of-type(4) {
+        background-image: url("../Pictures/IMG_2380.jpg");
+    }
+    .slide:nth-of-type(5) {
+        background-image: url("../Pictures/IMG_2363.jpg");
+    }
+    .slide:nth-of-type(6) {
+        background-image: url("../Pictures/IMG_2357.jpg");
+    }
+
+    h2.covid {
+        margin-top: 0;
+        padding-top: 10px;
+    }
+
+    #scrollDown {
+        opacity: 0;
+    }
+
+    #bordered {
+        border-left: 20px solid #224;
+        border-right: 20px solid #224;
+    }
+
+    /* Navbar */
+
+    .flexbar {
+        overflow: hidden;
+        position: relative;
+        z-index: 4;
+    }
+
+    #mobile-menu {
+        background-color: #224;
+        color: white;
+        display: block;
+    }
+    
+    .tabl {
+        width: 100%;
+        border: none;
+        display: none;
+    }
+
+    .tabl:hover {
+        color: #224;
+        background-color: silver;
+    }
+
+    #KFD {
+        font-size: 7vw;
+    }
+
+    /* Tab-specific elements */
+
+    .bio-image {
+        width: 75%;
+    }
+
+    .accordion {
+        width: 100%;
+        text-align: left;
+        padding: 2em;
+    }
+
+    .accpanel {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #map {
+        width: 100%;
+    }
+
+    #contact {
+        opacity: 0;
+    }
+}
+
+@media only screen and (min-width: 701px) {
+    #mobile-menu {
+        display: none;
+    }
 }
