@@ -117,7 +117,7 @@
 
 #scrollDown {
     margin: 0 auto;
-    position: fixed;
+    position: absolute;
     left: 50%;
     bottom: 20px;
     transform: translate(-50%, -50%);
