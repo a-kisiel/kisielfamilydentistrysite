@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    background-color: #224;
+}
+
+h1, h2, #contact {
+    text-align: center;
+}
+
+#main-header {
+    background-color: #224;
+}
+
+.page-header {
+    max-width: 1300px;
+    color: white;
+    background-color: #224;
+    margin: auto;
+    padding: 25px;
+    font-size: 44px;
+}
+
+#navbar {
+    margin: auto;
+    max-width: 1300px;
+    background-color: #224;
+    display: flex;
+}
+
+.tabl {
+    width: 16.666666%;
+    padding: 25px;
+    font-size: 16px;
+    border: none;
+    background-color: #224;
+    color: white;
+    transition: .1s;
+}
+
+.tabl:hover, .tabl.active {
+    color: #224;
+    background-color: silver;
+}
+
+#bordered {
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 70vh;
+    font-size: 20px;
+    background-color: white;
+}
+
+.tabcontent {
+    padding: 0 80px;
+}
+
+#slideshow-bob {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.slide {
+    height: 70vh;
+    width: 100%;
+    max-width: 1300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.visible-slide {
+    opacity: 1;
+}
+
+.bio-image {
+    width: 220px;
+    height: 220px;
+    padding-right: 40px;
+}
+
+.tab-header {
+    padding-top: 40px;
+}
+
+.question {
+    font-weight: 900;
+}
+
+/* Image sources */
+
+.slide:nth-of-type(1) {
+    background-image: url("../Pictures/banner2.jpg");
+}
+.slide:nth-of-type(2) {
+    background-image: url("../Pictures/IMG_2358.jpg");
+}
+.slide:nth-of-type(3) {
+    background-image: url("../Pictures/IMG_2359.jpg");
+}
+.slide:nth-of-type(4) {
+    background-image: url("../Pictures/IMG_2380.jpg");
+}
+.slide:nth-of-type(5) {
+    background-image: url("../Pictures/IMG_2363.jpg");
+}
+.slide:nth-of-type(6) {
+    background-image: url("../Pictures/IMG_2357.jpg");
+}
