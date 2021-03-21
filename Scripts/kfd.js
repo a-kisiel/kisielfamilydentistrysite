@@ -2,9 +2,9 @@
 /* Allows all tabs to be accessible via one page */
 
 function openPage(pageName, elmnt, loc) {
-  // Hide all elements with class="tabcontent" by default
+  // Hide all elements with class="tab-content" by default
   var tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
+  tabcontent = document.getElementsByClassName("tab-content");
   for (var i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
@@ -59,8 +59,8 @@ var threshold = bar.offsetTop;
 
 this.onscroll = () => {
   scrolled = true;
-  document.getElementById('scrollDown').classList.remove('visible-sd');
-  document.getElementById('scrollDown').classList.add('invisible-sd');
+  // document.getElementById('scrollDown').classList.remove('visible-sd');
+  // document.getElementById('scrollDown').classList.add('invisible-sd');
   if (this.pageYOffset >= threshold) {
     bar.classList.add("sticky");
   }
@@ -71,10 +71,10 @@ this.onscroll = () => {
 
 /* Implements accordion for OFS page */
 
-accs = document.getElementsByClassName("accpanel")
+accs = document.getElementsByClassName("acc-panel")
 
 function activateAcc(acc) {
-  accs = document.getElementsByClassName("accpanel")
+  accs = document.getElementsByClassName("acc-panel")
 
   for (var i=0; i<accs.length; i++) {
     if (accs[i].id == acc) {
@@ -102,10 +102,10 @@ function nextSlide() {
 
 /* Prompts the user to scroll down if inactive for several seconds */
 
-setTimeout(function() {
-  if (!scrolled)
-    document.getElementById('scrollDown').classList.add('visible-sd');
-}, 6000)
+// setTimeout(function() {
+//   if (!scrolled)
+//     document.getElementById('scrollDown').classList.add('visible-sd');
+// }, 6000)
 
 // Set up default states in the site
 
@@ -113,7 +113,7 @@ for (var i=0; i<accs.length; i++) {
   accs[i].style.display = "none";
 }
 
-var tabs = document.getElementsByClassName('tabcontent');
+var tabs = document.getElementsByClassName('tab-content');
 for (var i=0; i<tabs.length; i++){
   tabs[i].style.display = 'none';
 }

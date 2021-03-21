@@ -8,6 +8,18 @@ h1, h2, #contact {
     text-align: center;
 }
 
+button>span {
+    padding-left: 10px;
+}
+
+.covid {
+    color: #c00000;
+}
+
+#contact {
+    padding: 40px 0;
+}
+
 #main-header {
     background-color: #224;
 }
@@ -26,6 +38,10 @@ h1, h2, #contact {
     max-width: 1300px;
     background-color: #224;
     display: flex;
+}
+
+#mobile-navbar {
+    display: none;
 }
 
 .tabl {
@@ -51,7 +67,7 @@ h1, h2, #contact {
     background-color: white;
 }
 
-.tabcontent {
+.tab-content {
     padding: 0 80px;
 }
 
@@ -67,6 +83,7 @@ h1, h2, #contact {
     max-width: 1300px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
     position: absolute;
     opacity: 0;
 
@@ -80,10 +97,20 @@ h1, h2, #contact {
     opacity: 1;
 }
 
+.bio-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
 .bio-image {
     width: 220px;
     height: 220px;
     padding-right: 40px;
+}
+
+.bio-content {
+    padding: 0;
 }
 
 .tab-header {
@@ -113,4 +140,76 @@ h1, h2, #contact {
 }
 .slide:nth-of-type(6) {
     background-image: url("../Pictures/IMG_2357.jpg");
+}
+
+.accordion {
+    background-color: lightgray;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    width: 100%;
+    padding: 40px;
+}
+
+a.acc-panel {
+    text-align: left;
+    padding: 25px 0;
+}
+
+.accordion:hover {
+    background-color: #e3e3e3;
+    transition: .2s;
+}
+
+.update-date {
+    text-decoration: underline;
+    text-align: left;
+    font-size: 18px;
+    font-weight: initial;
+}
+
+@media (max-width: 1300px) {
+
+    #navbar {
+        display: none;
+    }
+
+    .tabl {
+        width: 100%;
+        display: none;
+        transition: .2s;
+    }
+
+    #mobile-navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #mobile-menu {
+        display: block;
+    }
+
+    .tab-content {
+        padding: 15px;
+    }
+
+    .bio-container {
+        flex-direction: column;
+    }
+
+    .bio-image {
+        padding: 0;
+        margin: auto;
+    }
+
+    .bio-content {
+        padding-top: 25px;
+    }
+
+    .accordion {
+        font-size: 16px;
+        border-bottom: 1px solid black;
+    }
 }

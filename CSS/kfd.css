@@ -126,11 +126,11 @@ li>p {
     padding: 1em;
 }
 
-.accpanel {
+.acc-panel {
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
-a.accpanel {
+a.acc-panel {
     text-align: left;
     padding-left: 0;
     padding-right: 0;
@@ -435,7 +435,7 @@ a.accpanel {
         padding: 2em;
     }
 
-    .accpanel {
+    .acc-panel {
         padding-left: 0;
         padding-right: 0;
     }
