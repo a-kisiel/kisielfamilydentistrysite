@@ -8,10 +8,6 @@ h1, h2, #contact {
     text-align: center;
 }
 
-button>span {
-    padding-left: 10px;
-}
-
 .covid {
     color: #c00000;
 }
@@ -47,7 +43,9 @@ button>span {
 .tabl {
     width: 16.666666%;
     padding: 25px;
+    display: flex;
     font-size: 16px;
+    text-align: center;
     border: none;
     background-color: #224;
     color: white;
@@ -57,6 +55,15 @@ button>span {
 .tabl:hover, .tabl.active {
     color: #224;
     background-color: silver;
+}
+
+.tabl-content {
+    display: flex;
+    margin: auto;
+}
+
+.tabl-content>span {
+    padding-left: 10px;
 }
 
 #bordered {
@@ -170,7 +177,7 @@ a.acc-panel {
     font-weight: initial;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1172px) {
 
     #navbar {
         display: none;
