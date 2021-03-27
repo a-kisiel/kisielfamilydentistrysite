@@ -18,25 +18,16 @@
 
 <body>
     <div id='main-header'>
-        <header class="page-header">
-            <a id="KFD" title="Home">Kisiel Family Dentistry</a>
+        <header class="page-header" style="display: flex; align-items: center;">
+            <div id="KFD">Kisiel Family Dentistry</div><div id="mobile-menu" onclick="toggleNav();"><strong><i class="fa fa-bars"></i></span></strong></div>
         </header>
         <div id="navbar">
-            <button class="tabl" onclick="openPage('home', this, 'home-h1');" style="color: #224; background-color: silver;"><strong>Home</strong> <span><i class="fas fa-home"></i></span></button>
-            <button class="tabl" onclick="openPage('about-us', this, 'staff-h1');"><strong>Our Staff</strong> <span><i class="fas fa-user-md"></i></span></button>
-            <button class="tabl" onclick="openPage('FAQ', this, 'faq-h1')"><strong>FAQ</strong> <span><i class="far fa-question-circle"></i></span></button>
-            <button class="tabl" onclick="openPage('ofs', this, 'of-h1')"><strong>Online Forms</strong> <span><i class="fas fa-file-alt"></i></span></button>
-            <button class="tabl" onclick="openPage('latest-updates', this, 'latest-updates-h1')"><strong>Latest Updates</strong> <span><i class="fas fa-newspaper"></i></span></button>
-            <button class="tabl" onclick="openPage('contact-us', this, 'contact-h1')"><strong>Contact Us</strong><span><i class="fas fa-tooth"></i></span></button>
-        </div>
-		<div id="mobile-navbar">
-			<button id="mobile-menu" class="tabl" onclick="openNav();"><strong><i class="fa fa-bars"></i></span></strong></button>
-            <button class="tabl" onclick="openPage('home', this, 'home-h1'); openNav();" style="color: #224; background-color: silver;"><strong>Home</strong> <span><i class="fas fa-home"></i></span></button>
-            <button class="tabl" onclick="openPage('about-us', this, 'staff-h1'); openNav();"><strong>Our Staff</strong> <span><i class="fas fa-user-md"></i></span></button>
-            <button class="tabl" onclick="openPage('FAQ', this, 'faq-h1'); openNav();"><strong>FAQ</strong> <span><i class="far fa-question-circle"></i></span></button>
-            <button class="tabl" onclick="openPage('ofs', this, 'of-h1'); openNav();"><strong>Online Forms</strong> <span><i class="fas fa-file-alt"></i></span></button>
-            <button class="tabl" onclick="openPage('latest-updates', this, 'latest-updates-h1'); openNav();"><strong>Latest Updates</strong> <span><i class="fas fa-newspaper"></i></span></button>
-            <button class="tabl" onclick="openPage('contact-us', this, 'contact-h1'); openNav();"><strong>Contact Us</strong><span><i class="fas fa-tooth"></i></span></button>
+            <button class="tabl" onclick="openPage('home', this, 'home-h1');" style="color: #224; background-color: silver;" aria-label="Home"><strong>Home</strong> <span><i class="fas fa-home"></i></span></button>
+            <button class="tabl" onclick="openPage('about-us', this, 'staff-h1');" aria-label="Our Staff"><strong>Our Staff</strong> <span><i class="fas fa-user-md"></i></span></button>
+            <button class="tabl" onclick="openPage('FAQ', this, 'faq-h1')" aria-label="Frequently Asked Questions"><strong>FAQ</strong> <span><i class="far fa-question-circle"></i></span></button>
+            <button class="tabl" onclick="openPage('ofs', this, 'of-h1')" aria-label="Online Forms"><strong>Online Forms</strong> <span><i class="fas fa-file-alt"></i></span></button>
+            <button class="tabl" onclick="openPage('latest-updates', this, 'latest-updates-h1')" aria-label="Latest Updates"><strong>Latest Updates</strong> <span><i class="fas fa-newspaper"></i></span></button>
+            <button class="tabl" onclick="openPage('contact-us', this, 'contact-h1')" aria-label="Contact Us"><strong>Contact Us</strong><span><i class="fas fa-tooth"></i></span></button>
         </div>
     </div>
 
@@ -51,8 +42,7 @@
 
 	<div id="bordered">
 		<div id="home" class="tab-content">
-			<h1 id="home-h1" style="padding: 40px 0;">Kisiel Family Dentistry</h1>
-
+			<div id="home-h1" style="padding-top: 40px;"></div>
 			<h2 class="covid" style="font-weight: bold;">Note Regarding the Recent COVID-19 Epidemic:</h2>
 			<p class="covid">
 				As our patients know, we have continued to keep up to date with current NYS Health Department and CDC guidelines to provide a safe dental environment. We appreciate the overwhelming cooperation we've received from patients during this epidemic. We understand the questions that we have to ask and precautions have tested many people's patience, but they're important to follow in order to keep us all safe.
@@ -91,7 +81,7 @@
 			<p style="padding-bottom: 2em;"> 
 				If at any point in the process you find that you're
 				having some difficulty, feel free to give us a call, stop
-				in at the office, or send us an email at kisieldent@gmail.com.
+				in at the office, or send us an email at <a href="mailto: kisieldent@gmail.com">kisieldent@gmail.com</a>.
 			</p>
 
 				<button class="accordion" onclick="activateAcc('acc1')">Form Information</button>
@@ -239,8 +229,8 @@
 			<h1 id="contact-h1" class="tab-header">Contact Us</h1>
 
 			<p>
-				If you have any questions or problems we'd love to hear from you. The easiest/best way to do so is to call us at (518) 792-2364, but we also 
-				periodically check our email kisieldent@gmail.com.<br/><br/>
+				If you have any questions or problems we'd love to hear from you. The easiest/best way to do so is to call us at <a href="tel:+15187922364" style="text-decoration: none;">(518) 792-2364</a>, but we also 
+				periodically check our email <a href="mailto: kisieldent@gmail.com">kisieldent@gmail.com</a>.<br/><br/>
 
 				We also appreciate hearing back from our patients -- feel free to  
 				<a style="font-size: 1em;" href="https://www.facebook.com/pages/category/General-Dentist/Kisiel-Family-Dentistry-159636244067695/"> visit us on Facebook </a>
@@ -249,19 +239,21 @@
 			</p>
 
 			<p class="contact-links">
-				Kisiel Family Dentistry<br/>
-				14 Baywood Dr.<br/>
-				Queensbury, NY<br/>
-				12804<br/><br/>
+				<a href="https://goo.gl/maps/ffc3SB6NDo3Tx5DX6" target="_blank" style="color: black; text-decoration: none;">
+					Kisiel Family Dentistry<br/>
+					14 Baywood Dr.<br/>
+					Queensbury, NY<br/>
+					12804<br/><br/>
+				</a>
 
+				Phone: <a href="tel:+15187922364" style="color: black; text-decoration: none;">(518) 792-2364</a><br/>
 				Fax: (518) 745-8284<br/>
-				Phone: (518) 792-2364<br/>
-				Email: kisieldent@gmail.com
+				Email: <a href="mailto: kisieldent@gmail.com" style="color: black; text-decoration: none;">kisieldent@gmail.com</a>
 			</p>
 		</div>
 
 		<footer id="contact" class="cleared" style="padding-top: 40px;">
-			____________________________________________________ <br><br>
+			<div style="overflow: hidden;">____________________________________________________</div> <br><br>
 			14 Baywood Dr&nbsp | &nbspQueensbury, NY 12804&nbsp |&nbsp (518) 792-2364
 		</footer>
 	</div>

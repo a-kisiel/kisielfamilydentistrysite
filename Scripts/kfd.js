@@ -32,8 +32,7 @@ function openPage(pageName, elmnt, loc) {
 
 var clicked = false
 
-function openNav() {
-  var button = document.getElementById('mobile-menu')
+function toggleNav() {
   var tabls = document.getElementsByClassName('tabl');
   if (!clicked) {
     clicked = true;
@@ -46,7 +45,6 @@ function openNav() {
     for (var i=0; i<tabls.length; i++) {
       tabls[i].style.display = 'none';
     }
-    button.style.display = 'block';
   }
 }
 

@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: 'Open Sans', Helvetica, sans-serif;
-    background-color: #224;
 }
 
 h1, h2, #contact {
@@ -25,7 +24,7 @@ button>span {
 }
 
 .page-header {
-    max-width: 1300px;
+    max-width: 1800px;
     color: white;
     background-color: #224;
     margin: auto;
@@ -35,12 +34,12 @@ button>span {
 
 #navbar {
     margin: auto;
-    max-width: 1300px;
+    max-width: 1800px;
     background-color: #224;
     display: flex;
 }
 
-#mobile-navbar {
+#mobile-menu {
     display: none;
 }
 
@@ -61,6 +60,7 @@ button>span {
 
 #bordered {
     max-width: 1300px;
+    padding: 0 40px;
     margin: 0 auto;
     margin-top: 70vh;
     font-size: 20px;
@@ -75,15 +75,16 @@ button>span {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    padding-top: 40px;
 }
 
 .slide {
     height: 70vh;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1800px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     position: absolute;
     opacity: 0;
 
@@ -124,22 +125,22 @@ button>span {
 /* Image sources */
 
 .slide:nth-of-type(1) {
-    background-image: url("../Pictures/banner2.jpg");
+    background-image: url("https://res.cloudinary.com/akisiel/image/upload/v1616869338/Office/banner2_upvmht.jpg");
 }
 .slide:nth-of-type(2) {
-    background-image: url("../Pictures/IMG_2358.jpg");
+    background-image: url("https://res.cloudinary.com/akisiel/image/upload/v1616869343/Office/IMG_2358_x1ankb.jpg");
 }
 .slide:nth-of-type(3) {
-    background-image: url("../Pictures/IMG_2359.jpg");
+    background-image: url("https://res.cloudinary.com/akisiel/image/upload/v1616869346/Office/IMG_2359_b3l2mo.jpg");
 }
 .slide:nth-of-type(4) {
-    background-image: url("../Pictures/IMG_2380.jpg");
+    background-image: url("https://res.cloudinary.com/akisiel/image/upload/v1616871126/Office/IMG_2380-min_vpelgv.jpg");
 }
 .slide:nth-of-type(5) {
-    background-image: url("../Pictures/IMG_2363.jpg");
+    background-image: url("https://res.cloudinary.com/akisiel/image/upload/v1616869345/Office/IMG_2363_gndjbp.jpg");
 }
 .slide:nth-of-type(6) {
-    background-image: url("../Pictures/IMG_2357.jpg");
+    background-image: url("https://res.cloudinary.com/akisiel/image/upload/v1616869343/Office/IMG_2357_mpuu7q.jpg");
 }
 
 .accordion {
@@ -170,10 +171,54 @@ a.acc-panel {
     font-weight: initial;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1800px) {
+
+    body {
+        background-color: #224;
+    }
+
+    #slideshow-bob {
+        padding-top: 0;
+    }
+
+    #navbar>button {
+        font-size: 12px;
+    }
+
+    .tab-content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 995px) {
+
+    .slide {
+        height: 400px;
+        width: 100%;
+    }
+
+    #bordered {
+        margin-top: 400px;
+    }
 
     #navbar {
         display: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        z-index: 4;
+    }
+
+    #mobile-menu {
+        display: block;
+        margin-left: auto;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+
+    #navbar>button {
+        font-size: 18px;
     }
 
     .tabl {
@@ -185,14 +230,9 @@ a.acc-panel {
     #mobile-navbar {
         display: flex;
         flex-direction: column;
-    }
-    
-    #mobile-menu {
-        display: block;
-    }
-
-    .tab-content {
-        padding: 15px;
+        z-index: 4;
+        position: absolute;
+        width: 100%;
     }
 
     .bio-container {
@@ -211,5 +251,15 @@ a.acc-panel {
     .accordion {
         font-size: 16px;
         border-bottom: 1px solid black;
+    }
+
+    #divider {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    #KFD {
+        font-size: 24px;
     }
 }
