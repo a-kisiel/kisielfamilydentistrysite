@@ -178,7 +178,6 @@ a.acc-panel {
     font-weight: initial;
 }
 
-<<<<<<< HEAD
 @media (max-width: 1800px) {
 
     body {
@@ -208,9 +207,6 @@ a.acc-panel {
     #bordered {
         margin-top: 400px;
     }
-=======
-@media (max-width: 1172px) {
->>>>>>> af447607b1e725c678d7915eaf314e8cb6f6ea1a
 
     #navbar {
         display: none;
