@@ -1,3 +1,21 @@
+/* Mobile/small screen navbar */
+
+var clicked = false
+function toggleNav() {
+  var tabls = document.getElementsByClassName('tabl');
+  if (!clicked) {
+    clicked = true;
+    for (var i=0; i<tabls.length; i++) {
+      tabls[i].style.display = 'block';
+    }
+  }
+  else {
+    clicked = false;
+    for (var i=0; i<tabls.length; i++) {
+      tabls[i].style.display = 'none';
+    }
+  }
+}
 
 /* Allows all tabs to be accessible via one page */
 
@@ -26,37 +44,11 @@ function openPage(pageName, elmnt, loc) {
   // Scrolls (up then) down to the content
   document.getElementById('KFD').scrollIntoView({block: "nearest", inline: "nearest", behavior: "smooth"})
   document.getElementById(loc).scrollIntoView({block: "center", inline: "nearest", behavior: "smooth"})
+
+  if (clicked)
+    toggleNav();
 }
-
-/* Mobile/small screen navbar */
-
-var clicked = false
-
-function toggleNav() {
-  var tabls = document.getElementsByClassName('tabl');
-  if (!clicked) {
-    clicked = true;
-    for (var i=0; i<tabls.length; i++) {
-      tabls[i].style.display = 'block';
-    }
-  }
-  else {
-    clicked = false;
-    for (var i=0; i<tabls.length; i++) {
-      tabls[i].style.display = 'none';
-    }
-  }
-}
-
-/* Sticky navbar on mobile */
-
-var bar = document.getElementById("main-header");
-var threshold = bar.offsetTop;
-
-this.onscroll = () => {
-  if (this.pageYOffset >= threshold)
-    bar.style.marginTop = this.pageYOffset;
-}
+openPage('home', this, 'home-h1');
 
 /* Implements accordion for OFS page */
 
@@ -81,20 +73,13 @@ function activateAcc(acc) {
 
 var slides = document.querySelectorAll('#slideshow-bob .slide');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,5000);
+var slideInterval = setInterval(nextSlide, 5000);
 
 function nextSlide() {
     slides[currentSlide].className = 'slide';
     currentSlide = (currentSlide+1)%slides.length;
     slides[currentSlide].className = 'slide visible-slide';
 }
-
-/* Prompts the user to scroll down if inactive for several seconds */
-
-// setTimeout(function() {
-//   if (!scrolled)
-//     document.getElementById('scrollDown').classList.add('visible-sd');
-// }, 6000)
 
 // Set up default states in the site
 
@@ -106,4 +91,3 @@ var tabs = document.getElementsByClassName('tab-content');
 for (var i=0; i<tabs.length; i++){
   tabs[i].style.display = 'none';
 }
-document.getElementById('home').style.display = 'block';

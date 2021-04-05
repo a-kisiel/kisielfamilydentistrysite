@@ -17,6 +17,7 @@ h1, h2, #contact {
 
 #main-header {
     background-color: #224;
+    position: relative;
 }
 
 .page-header {
@@ -187,6 +188,10 @@ h1, h2, #contact {
 a.acc-panel {
     text-align: left;
     padding: 25px 0;
+}
+
+.acc-panel {
+    display: none;
 }
 
 .accordion:hover {
