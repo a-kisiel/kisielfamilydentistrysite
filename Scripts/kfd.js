@@ -48,23 +48,14 @@ function toggleNav() {
   }
 }
 
-var scrolled = false;
+/* Sticky navbar on mobile */
 
-/* Implements 'sticky' navbar */
-
-var bar = document.getElementById("navbar");
+var bar = document.getElementById("main-header");
 var threshold = bar.offsetTop;
 
 this.onscroll = () => {
-  scrolled = true;
-  // document.getElementById('scrollDown').classList.remove('visible-sd');
-  // document.getElementById('scrollDown').classList.add('invisible-sd');
-  if (this.pageYOffset >= threshold) {
-    bar.classList.add("sticky");
-  }
-  else {
-    bar.classList.remove("sticky");
-  }
+  if (this.pageYOffset >= threshold)
+    bar.style.marginTop = this.pageYOffset;
 }
 
 /* Implements accordion for OFS page */
