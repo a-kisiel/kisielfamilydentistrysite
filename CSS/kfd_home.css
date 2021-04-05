@@ -222,6 +222,17 @@ a.acc-panel {
 
 @media (max-width: 995px) {
 
+    #main-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 24;
+    }
+
+    #slideshow-bob {
+        margin-top: 110px;
+    }
+
     .slide {
         height: 400px;
         width: 100%;
@@ -293,10 +304,8 @@ a.acc-panel {
         font-size: 24px;
     }
 
-    header {
-        position: sticky;
-        top: 0;
-        z-index: 5;
+    #slideshow-bob {
+        margin-top: 83px;
     }
 
     .page-header {
