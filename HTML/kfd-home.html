@@ -2,39 +2,36 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="The home page for Dr. Raymond Jeff Kisiel's dental practice in Queensbury, NY">
-	<meta name="google-site-verification" content="hgLNhLkGQWfi0Cjbr5xl58cFsA54r-6dAw5o76dRrOk" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The home page for Dr. Raymond Jeff Kisiel's dental practice in Queensbury, NY">
+    <meta name="google-site-verification" content="hgLNhLkGQWfi0Cjbr5xl58cFsA54r-6dAw5o76dRrOk" />
 
-	<!-- Universal stylesheets -->
-	<link rel="stylesheet" href="../CSS/reset.css">
-	<link rel="stylesheet" href="../CSS/kfd.css">
-	<!-- Different stylesheets for different screen sizes -->
-	<link rel="stylesheet" media="all and (max-device-width: 700px)" href="../CSS/iphone.css"/>
-	<link rel="stylesheet" media="all and ((min-device-width: 701px) and (max-device-width: 1024px))" href="../CSS/landscapes.css">
-    <link rel="stylesheet" media="all and (((device-width: 768px) and (device-height: 1024px)) or ((device-width: 1024px) and (device-height: 768px)))" href="../CSS/ipad.css"/>
-    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="../CSS/desktop.css" />
-	<!-- Fonts/Icons -->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/kfd_home.css">
+
+    <!-- Fonts/Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
 	<title>Kisiel Family Dentistry</title>
 </head>
 
 <body>
-	<header class="masthead">
-		<a id="KFD" title="Home" style="font-size: 1.5em">Kisiel Family Dentistry</a>
-	</header>
-	<div id="navbar" class="flexbar">
-		<button class="tabl" onclick="openNav()" id="mobile-menu"><strong><i class="fa fa-bars"></i></strong></button>
-		<button class="tabl" onclick="openPage('home', this, 'home-h1');"><strong>Home</strong> &nbsp &nbsp <i class="fas fa-home"></i></button>
-		<button class="tabl" onclick="openPage('about-us', this, 'staff-h1');"><strong>Our Staff</strong> &nbsp &nbsp <i class="fas fa-user-md"></i></button>
-		<button class="tabl" onclick="openPage('FAQ', this, 'faq-h1')"><strong>FAQ</strong> &nbsp &nbsp <i class="far fa-question-circle"></i></button>
-		<button class="tabl" onclick="openPage('ofs', this, 'of-h1')"><strong>Online Forms</strong> &nbsp &nbsp <i class="fas fa-file-alt"></i></button>
-		<button class="tabl" onclick="openPage('latest-updates', this, 'latest-updates-h1')"><strong>Latest Updates</strong> &nbsp &nbsp <i class="fas fa-newspaper"></i></button>
-		<button class="tabl" onclick="openPage('contact-us', this, 'contact-h1')"><strong>Contact Us</strong>&nbsp &nbsp <i class="fas fa-tooth"></i></button>
-	</div>
+    <div id='main-header'>
+        <header class="page-header" style="display: flex; align-items: center;">
+            <div id="KFD">Kisiel Family Dentistry</div><div id="mobile-menu" onclick="toggleNav();"><strong><i class="fa fa-bars"></i></span></strong></div>
+        </header>
+        <div id="navbar">
+            <button class="tabl" onclick="openPage('home', this, 'home-h1');" style="color: #224; background-color: silver;" aria-label="Home"><div style="margin: auto;"><strong>Home</strong> <span style="padding-left: 10px;"><i class="fas fa-home"></i></span></div></button>
+            <button class="tabl" onclick="openPage('about-us', this, 'staff-h1');" aria-label="Our Staff"><div style="margin: auto;"><strong>Our Staff</strong><span style="padding-left: 10px;"><i class="fas fa-user-md"></i></span></div></button>
+            <button class="tabl" onclick="openPage('FAQ', this, 'faq-h1')" aria-label="Frequently Asked Questions"><div style="margin: auto;"><strong>FAQ</strong><span style="padding-left: 10px;"><i class="far fa-question-circle"></i></span></div></button>
+            <button class="tabl" onclick="openPage('ofs', this, 'of-h1')" aria-label="Online Forms"><div style="margin: auto;"><strong>Online Forms</strong><span style="padding-left: 10px;"><i class="fas fa-file-alt"></i></span></div></button>
+            <button class="tabl" onclick="openPage('latest-updates', this, 'latest-updates-h1')" aria-label="Latest Updates"><div style="margin: auto;"><strong>Latest Updates</strong><span style="padding-left: 10px;"><i class="fas fa-newspaper"></i></span></div></button>
+            <button class="tabl" onclick="openPage('contact-us', this, 'contact-h1')" aria-label="Contact Us"><div style="margin: auto;"><strong>Contact Us</strong><span style="padding-left: 10px;"><i class="fas fa-tooth"></i></span></div></button>
+        </div>
+    </div>
 
 	<div id="slideshow-bob">
 		<li class="slide visible-slide"></li>
@@ -43,17 +40,11 @@
 		<li class="slide"></li>
 		<li class="slide"></li>
 		<li class="slide"></li>
-		<div style="display: flex;">
-			<p id="scrollDown" class="invisible-sd">
-				scroll down for more
-			</p>
-		</div>
 	</div>
 
 	<div id="bordered">
-		<div id="home" class="tabcontent">
-			<h1 id="home-h1">Kisiel Family Dentistry</h1>
-
+		<div id="home" class="tab-content">
+			<div id="home-h1" style="padding-top: 40px;"></div>
 			<h2 class="covid" style="font-weight: bold;">Note Regarding the Recent COVID-19 Epidemic:</h2>
 			<p class="covid">
 				As our patients know, we have continued to keep up to date with current NYS Health Department and CDC guidelines to provide a safe dental environment. We appreciate the overwhelming cooperation we've received from patients during this epidemic. We understand the questions that we have to ask and precautions have tested many people's patience, but they're important to follow in order to keep us all safe.
@@ -62,13 +53,13 @@
 			</p>
 
 			<p> 
-				Dr. Kisiel and his staff are adept at performing all standard dental procedures, including crowns, bridges, partial and full dentures, 
+				Dr. Kisiel and his staff are adept at performing all standard dental procedures, including crowns, bridges, partial and full dentures, implants, 
 				implant-retained crowns and dentures, root canals, extractions, tooth-colored restorations, and more. We won't try to make you pay for anything you don't 
-				need, nor will we perform anything we aren't comfortable with -- if we don't think we can do something we have no problems referring you to a 
+				need, nor will we perform anything we aren't comfortable with &#8211 if we don't think we can do something we have no problems referring you to a 
 				trusted nearby specialist who can.
 			</p>
 
-			<h2>Hours</h2>
+			<h2 style="padding-top: 40px;">Hours</h2>
 			<p style="text-align: center">
 				Tuesday: 8:15am - 5:00pm<br/>
 				Wednesday 8:15am - 3:00pm<br/>
@@ -76,18 +67,15 @@
 				Friday 8:15am - 2:00pm<br/><br/>
 				Special arrangements may be made for early-morning or late afternoon in emergency cases.
 			</p>
-			<h2>
-				Location
-			</h2>
+			<h2 style="padding-top: 40px;">Location</h2>
 			<!-- Google Maps Implementation -->
-			<div id="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11605.868678542274!2d-73.657034!3d43.3463377!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb1511dc5a1cd1c12!2sDr.%20Raymond%20J.%20Kisiel%2C%20DDS!5e0!3m2!1sen!2sus!4v1607261522466!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-					
+			<div id="map" style="display: flex;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11605.868678542274!2d-73.657034!3d43.3463377!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb1511dc5a1cd1c12!2sDr.%20Raymond%20J.%20Kisiel%2C%20DDS!5e0!3m2!1sen!2sus!4v1607261522466!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0; margin: auto;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>		
 			</div>
 		</div>
 
-		<div id="ofs" class="tabcontent">
-			<h1 id="of-h1">Online Forms</h1>
+		<div id="ofs" class="tab-content">
+			<h1 id="of-h1" class="tab-header">Online Forms</h1>
 			<p> 
 				In an effort to save everyone time at the office, we've made some forms available online. Simply print what you need and fill it out
 				whenever.
@@ -95,27 +83,27 @@
 			<p style="padding-bottom: 2em;"> 
 				If at any point in the process you find that you're
 				having some difficulty, feel free to give us a call, stop
-				in at the office, or send us an email at kisieldent@gmail.com.
+				in at the office, or send us an email at <a href="mailto: kisieldent@gmail.com">kisieldent@gmail.com</a>.
 			</p>
 
 				<button class="accordion" onclick="activateAcc('acc1')">Form Information</button>
-					<div class="accpanel" id="acc1">
+					<div class="acc-panel" id="acc1">
 						<p style="padding-top:1em;">
 							Currently, this site only provides the PDF versions of forms, and as a result will never ask for any personal 
 							 information; be careful handing such information out online.<br/><br/>New patients should download, print, 
-							 and fill out the <strong>New Patient Questionnaire</strong>, then bring it in to the office so we can enter 
+							 and fill out the <strong><a href="../Forms/New Patient Packet.pdf" target="_blank" title="New Patient Form" style="color: black; text-decoration: none;">New Patient Questionnaire</a></strong>, then bring it in to the office so we can enter 
 							 their information in our books.<br/><br/>
 						</p>
 					</div>
 
 				<button class="accordion" onclick="activateAcc('acc2')">Troubleshooting/FAQ</button>
-					<div class="accpanel" id="acc2">
+					<div class="acc-panel" id="acc2">
 						<p style="padding-top: 1em;">The download process for these forms may vary slightly depending on your internet browser, but the differences are minor (and the 
 							process itself is fairly easy).<br/><br/> Upon clicking the respective form link below, a new tab containing the form PDF should open.
 							 Look for the printer icon in the PDF reader window and it should lead you through the process of printing. If you'd prefer to save 
 							 the document, look for the 'download' button instead.<br/><br/>
 						</p>
-						<p style="font-weight: bold;">I don't see the form I need below -- what should I do?<br/><br/></p>
+						<p style="font-weight: bold;">I don't see the form I need below &#8211 what should I do?<br/><br/></p>
 						<p>
 							If you require a specific form that isn't listed below, either send us an email at kisieldent@gmail.com or stop by the 
 							office and we'll give you a paper copy.<br/><br/>
@@ -130,7 +118,7 @@
 					</div>
 				
 				<button class="accordion" onclick="activateAcc('acc3')">Available Forms</button>
-					<div class="accpanel" id="acc3">
+					<div class="acc-panel" id="acc3">
 						<p style="padding-top: 1em;"><a href="../Forms/New Patient Packet.pdf" target="_blank" title="New Patient Form" class="formLink" download> New Patient Form </a></p>
 						<p><a href="../Forms/Health History.pdf" target="_blank" title="Health History" class="formLink" download> Health History </a></p>
 						<p><a href="../Forms/HIPAA.pdf" target="_blank" title="HIPAA" class="formLink" download> HIPAA </a></p>
@@ -139,25 +127,13 @@
 					</div>		
 		</div>
 
-		<div id="latest-updates" class="tabcontent">
-			<h1 id="latest-updates-h1">Latest Updates</h1>
+		<div id="latest-updates" class="tab-content">
+			<h1 id="latest-updates-h1" class="tab-header">Latest Updates</h1>
 
-			<!-- <h2 class="update-date">7/8/2020</h2>
-			<p>
-				Since opening on June 23rd things have been going very well.  Patients have been impressed with our Covid-19 
-				response, and have overwhelmingly said they felt safe having dentistry and hygiene performed.  We are doing 
-				our best, and as an office collectively we feel safe as well!  We have added a $10 onetime fee to help defray the cost 
-				of personal protective equipment and laundering needs we have incurred as a result of the epidemic.
-				If you called during the quarantine period and have not been called for follow-up emergency 
-				treatment, please call our office;  we don't want to leave anyone untreated.  Patients who have been seen must 
-				 call our office 48 hours after their visit to let us know whether they have developed any COVID symptoms; this is simply a precautionary 
-				 measure that all medical offices are being asked to take. This site will be updated as new information from the state and 
-				 federal regulatory agencies change.  Thanks for all your support and cooperation in helping us keep everyone safe during your visit.<br/><br/>
-			</p> -->
-			
 			<h2 class="update-date">3/20/2021</h2>
 			<p>
 				As our patients know, we have continued to keep up to date with current NYS Health Department and CDC guidelines to provide a safe dental environment. We appreciate the overwhelming cooperation we've received from patients during this epidemic. We understand the questions that we have to ask and precautions have tested many people's patience, but they're important to follow in order to keep us all safe.
+			<br/><br/>
 			</p>
 
 			<h2 class="update-date">6/10/2020</h2>
@@ -200,8 +176,8 @@
 			</p>
 		</div>
 
-		<div id="FAQ" class="tabcontent">
-			<h1 id="faq-h1">Frequently Asked Questions</h1>
+		<div id="FAQ" class="tab-content">
+			<h1 id="faq-h1" class="tab-header">Frequently Asked Questions</h1>
 
 			<p class="question">What is your billing policy?</p>
 			<p>
@@ -210,14 +186,14 @@
 				We also offer payment plans to our regular, trusted patients.
 			</p>
 			<p class="question">What's the difference between a cap and a crown?</p>
-			<p>Nothing -- they mean the same thing.<br/><br/> A crown is recommended when more than half of the tooth structure is either gone or filled. Other reasons for getting a crown include 
+			<p>Nothing &#8211 they mean the same thing.<br/><br/> A crown is recommended when more than half of the tooth structure is either gone or filled. Other reasons for getting a crown include 
 				having a root canal or symptoms of Cracked Tooth Syndrome (i.e. cold sensitivity and sharp pain upon biting down).
 			</p>
 			<p class="question">Is bleaching safe?</p>
 			<p>Yes ... if done as recommended.<br/><br/> Bleaching can burn tissue if not applied <em>exclusively</em> to the enamel.
 			</p>
 			<p class="question">Why do I need x-rays?</p>
-			<p>Sometimes we can't detect problems within the teeth/bones themselves just by looking at their outsides -- x-rays provide us with that extra internal perspective.
+			<p>Sometimes we can't detect problems within the teeth/bones themselves just by looking at their outsides &#8211 x-rays provide us with that extra internal perspective.
 				Children and the elderly actually develop decay and problems more readily due to changes in diet, hormones, and saliva chemistry. X-rays also allow us 
 				to assess the soundness of existing restorations.
 			</p>
@@ -227,34 +203,36 @@
 			</p>
 		</div>
 
-		<div id="about-us" class="tabcontent">
-			<h1 id="staff-h1">Our Staff</h1>
-			<div id="bio-container">
-				<img src="../Pictures/jeff.jpg" class="bio-image">
-				<h2 class="bios">Dr. Kisiel</h2>
-				<p class="bios" style="margin-bottom: 5em;"> 
-					Dr. Raymond "Jeff" Kisiel grew up in Clinton, NY, a small town near Utica. He graduated from Clinton High School in 1982,
-					Hamilton College in 1986, and SUNY of Buffalo Dental School in 1990. He then extended his education with a dental residency 
-					at Buffalo General Hospital in 1991.<br/><br/>
-					In March 1991, Dr. Kisiel became an associate with Dr. Harvey Dearstyne, eventually buying his practice in January 1993. 
-					He practiced on Pearl Street in Glens Falls until March 2003, when he moved to his current office in Queensbury.
-				</p>
+		<div id="about-us" class="tab-content">
+			<h1 id="staff-h1" class="tab-header">Our Staff</h1>
+			<div class="bio-container">
+				<img src="https://res.cloudinary.com/akisiel/image/upload/v1616869449/Office/Staff/jeff_sv4v5p.jpg" class="bio-image">
+                <div class="bio-content">
+                    <h2 style="text-align: left; margin-top: 0;">Dr. Kisiel</h2>
+                    <p> 
+                        Dr. Raymond "Jeff" Kisiel grew up in Clinton, NY, a small town near Utica. He graduated from Clinton High School in 1982,
+                        Hamilton College in 1986, and SUNY of Buffalo Dental School in 1990. He then extended his education with a dental residency 
+                        at Buffalo General Hospital in 1991.<br/><br/>
+                        In March 1991, Dr. Kisiel became an associate with Dr. Harvey Dearstyne, eventually buying his practice in January 1993. 
+                        He practiced on Pearl Street in Glens Falls until March 2003, when he moved to his current office in Queensbury.
+                    </p>
+                </div>
 
 				<!-- <img src="../Pictures/moi.jpg" class="bio-image">
-				<h2 class="bios">Tracy Arquette</h2>
-				<p class="bios">
+				<h2 class="bio-content">Tracy Arquette</h2>
+				<p class="bio-content">
 					Tracy has been our trusted 'do-everything' assistant for 24 years. She is well-loved by staff and patients alike (and a large 
 					part of why people keep coming back to our office!).
 				</p> -->
 			</div>
 		</div>
 
-		<div id="contact-us" class="tabcontent">
-			<h1 id="contact-h1">Contact Us</h1>
+		<div id="contact-us" class="tab-content">
+			<h1 id="contact-h1" class="tab-header">Contact Us</h1>
 
 			<p>
-				If you have any questions or problems we'd love to hear from you. The easiest/best way to do so is to call us at (518) 792-2364, but we also 
-				periodically check our email kisieldent@gmail.com.<br/><br/>
+				If you have any questions or problems we'd love to hear from you. The easiest/best way to do so is to call us at <a href="tel:+15187922364" style="text-decoration: none;">(518) 792-2364</a>, but we also 
+				periodically check our email <a href="mailto: kisieldent@gmail.com">kisieldent@gmail.com</a>.<br/><br/>
 
 				We also appreciate hearing back from our patients -- feel free to  
 				<a style="font-size: 1em;" href="https://www.facebook.com/pages/category/General-Dentist/Kisiel-Family-Dentistry-159636244067695/"> visit us on Facebook </a>
@@ -263,19 +241,21 @@
 			</p>
 
 			<p class="contact-links">
-				Kisiel Family Dentistry<br/>
-				14 Baywood Dr.<br/>
-				Queensbury, NY<br/>
-				12804<br/><br/>
+				<a href="https://goo.gl/maps/ffc3SB6NDo3Tx5DX6" target="_blank" style="color: black; text-decoration: none;">
+					Kisiel Family Dentistry<br/>
+					14 Baywood Dr.<br/>
+					Queensbury, NY<br/>
+					12804<br/><br/>
+				</a>
 
+				Phone: <a href="tel:+15187922364" style="color: black; text-decoration: none;">(518) 792-2364</a><br/>
 				Fax: (518) 745-8284<br/>
-				Phone: (518) 792-2364<br/>
-				Email: kisieldent@gmail.com
+				Email: <a href="mailto: kisieldent@gmail.com" style="color: black; text-decoration: none;">kisieldent@gmail.com</a>
 			</p>
 		</div>
 
-		<footer id="contact" class="cleared">
-			____________________________________________________ <br><br>
+		<footer id="contact" class="cleared" style="padding-top: 40px;">
+			<div style="overflow: hidden;">____________________________________________________</div> <br><br>
 			14 Baywood Dr&nbsp | &nbspQueensbury, NY 12804&nbsp |&nbsp (518) 792-2364
 		</footer>
 	</div>
