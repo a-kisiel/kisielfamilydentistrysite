@@ -38,9 +38,11 @@ function openPage(pageName, elmnt, loc) {
   document.getElementById(pageName).style.display = "block";
 
   // Add the specific color to the button used to open the tab content
-  elmnt.style.backgroundColor = "silver";
-  elmnt.style.color = "#224";
-
+  if (elmnt.style) {
+    elmnt.style.backgroundColor = "silver";
+    elmnt.style.color = "#224";
+  }
+  
   // Scrolls (up then) down to the content
   document.getElementById('KFD').scrollIntoView({block: "nearest", inline: "nearest", behavior: "smooth"})
   document.getElementById(loc).scrollIntoView({block: "center", inline: "nearest", behavior: "smooth"})
@@ -74,7 +76,6 @@ function activateAcc(acc) {
 var slides = document.querySelectorAll('#slideshow-bob .slide');
 var currentSlide = 0;
 var slideInterval = setInterval(nextSlide, 5000);
-
 function nextSlide() {
     slides[currentSlide].className = 'slide';
     currentSlide = (currentSlide+1)%slides.length;
