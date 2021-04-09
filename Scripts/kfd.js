@@ -50,7 +50,6 @@ function openPage(pageName, elmnt, loc) {
   if (clicked)
     toggleNav();
 }
-openPage('home', this, 'home-h1');
 
 /* Implements accordion for OFS page */
 
