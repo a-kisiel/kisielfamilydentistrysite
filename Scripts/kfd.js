@@ -38,7 +38,7 @@ function openPage(pageName, elmnt, loc) {
   document.getElementById(pageName).style.display = "block";
 
   // Add the specific color to the button used to open the tab content
-  if (elmnt.style) {
+  if (elmnt) {
     elmnt.style.backgroundColor = "silver";
     elmnt.style.color = "#224";
   }
@@ -92,3 +92,5 @@ var tabs = document.getElementsByClassName('tab-content');
 for (var i=0; i<tabs.length; i++){
   tabs[i].style.display = 'none';
 }
+
+openPage('home', null, 'home-h1');
